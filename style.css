@@ -17,28 +17,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--primary-yellow);
 }
 
 main {
   border: 1px solid black;
-  border-radius: 5%;
+  border-radius: 20px;
   background-color: var(--neutral-white);
   padding: 1.5em;
   box-shadow: 8px 8px var(--neutral-black);
-  width: 90%;
+  max-width: 20rem;
 }
 
 .illustration {
-  border-radius: 5%;
+  border-radius: 10px;
   width: 100%;
 }
 
 .learning {
   background-color: var(--primary-yellow);
   padding: 0.5em 1em;
-  border-radius: 10%;
+  border-radius: 5px;
   display: inline-block;
   font-weight: 800;
   font-size: 0.8rem;
@@ -48,7 +48,6 @@ main {
 
 .date {
   font-size: 0.7rem;
-  /* margin: 1em 0; */
   color: var(--neutral-black);
 }
 
@@ -57,8 +56,13 @@ h1 {
   margin: 1em 0;
 }
 
+h1:hover {
+  color: var(--primary-yellow);
+  cursor: pointer;
+}
+
 p {
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--neutral-grey);
 }
 
@@ -83,16 +87,5 @@ p {
 footer {
   position: fixed;
   bottom: 0;
-  font-size: 12px;
-}
-
-@media screen and (min-width: 600px){
-  main {
-    width: 350px;
-  }
-
-  h1:hover {
-    color: var(--primary-yellow);
-    cursor: pointer;
-  }
+  font-size: 0.8rem;
 }
